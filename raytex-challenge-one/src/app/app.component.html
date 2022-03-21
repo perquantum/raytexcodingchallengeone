@@ -1,0 +1,41 @@
+<div class="calculator-wrapper">
+  <h1 class="title">Calculator</h1>
+  <input class="input-equation" type="text" placeholder="0" [(ngModel)]="equation" >
+
+  <div class="operators-wrapper">
+    <div class="operators">
+      <button class="btn btn-primary operator" (click)="Enter('+')">+</button>
+      <button class="btn btn-primary operator" (click)="Enter('-')">-</button>
+      <button class="btn btn-primary operator" (click)="Enter('*')">x</button>
+      <button class="btn btn-primary operator" (click)="Enter('/')">/</button>
+      <button class="btn btn-primary operator" (click)="Enter('%')">%</button>
+
+    </div>
+
+
+    <div class="numbers">
+      <div class="numbers-partial">
+        <button class="btn btn-primary number" (click)="Enter('1')">1</button>
+        <button class="btn btn-primary number" (click)="Enter('2')">2</button>
+        <button class="btn btn-primary number" (click)="Enter('3')">3</button>
+      </div>
+      <div class="numbers-partial">
+        <button class="btn btn-primary number" (click)="Enter('4')">4</button>
+        <button class="btn btn-primary number" (click)="Enter('5')">5</button>
+        <button class="btn btn-primary number" (click)="Enter('6')">6</button>
+      </div>
+      <div class="numbers-partial">
+        <button class="btn btn-primary number" (click)="Enter('7')">7</button>
+        <button class="btn btn-primary number" (click)="Enter('8')">8</button>
+        <button class="btn btn-primary number" (click)="Enter('9')">9</button>
+      </div>
+      <div class="numbers-partial">
+        <button class="btn btn-primary number" (click)="Enter('0')">0</button>
+        <button class="btn btn-primary output-btn" (click)="Calculate()">=</button>
+        <button class="btn btn-primary output-btn" (click)="Clear()">Clear</button>
+      </div>
+    </div>
+
+   
+  </div>
+</div>
